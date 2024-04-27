@@ -20,6 +20,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+          backgroundColor: Colors.grey.shade400,
           appBar: AppBar(
             automaticallyImplyLeading: false,
             backgroundColor: Colors.black87,
@@ -108,7 +109,6 @@ class _HomePageState extends State<HomePage> {
                         setState(() {
                           page = page + 1;
                           print(page);
-                          //page++;
                         });
                       },
                       child: const Text("Load More"))
@@ -136,6 +136,7 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade400,
       appBar: AppBar(
         backgroundColor: Colors.black87,
         automaticallyImplyLeading: false,

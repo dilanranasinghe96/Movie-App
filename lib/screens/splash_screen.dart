@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tmdb_movie_app/screens/homepage.dart';
+import 'package:logo_n_spinner/logo_n_spinner.dart';
+
+import 'homepage.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -23,6 +25,26 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    final size = MediaQuery.of(context).size;
+    return Scaffold(
+      backgroundColor: Colors.grey.shade400,
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            LogoandSpinner(
+              imageAssets: 'lib/assets/logo.png',
+              reverse: true,
+              arcColor: Colors.blue,
+              spinSpeed: Duration(milliseconds: 500),
+            ),
+            Text(
+              'Movie App',
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

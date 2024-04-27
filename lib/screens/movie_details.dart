@@ -19,6 +19,7 @@ class _MovieDetailsState extends State<MovieDetails> {
     var size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
+          backgroundColor: Colors.grey.shade400,
           appBar: AppBar(
             leading: BackButton(
               color: Colors.white,
