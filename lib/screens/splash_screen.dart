@@ -25,7 +25,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.grey.shade400,
       body: const Center(
@@ -40,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             Text(
               'Movie App',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             )
           ],
         ),
